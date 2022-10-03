@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { deleteTodo } from "../redux/features/todoSlice"
 import { useDispatch } from 'react-redux';
 import { ITodoState } from '../redux/features/todoSlice'
 import toast from 'react-hot-toast'
 import TodoModal from './TodoModal';
-import { updateTodo } from '../redux/features/todoSlice'
-import CheckBox from './CheckBox';
 
-// external css files
 import './userTodo.css'
 
 // importing icons from images directory
@@ -18,7 +15,6 @@ import ConfirmDelete from './ConfirmDelete';
 const UserTodos = (state: ITodoState) => {
 
    const [updateModal, setUpdateModal] = useState(false)
-   const [checked, setChecked] = useState(false)
    const [selectedTodo, setSelectedTodo] = useState<ITodoState>({
       id: "",
       title: "",
@@ -28,15 +24,6 @@ const UserTodos = (state: ITodoState) => {
    });
 const [confirmDelete, setConfirmDelete] = useState(false)
 
-   useEffect(()=>{
-   if(state.status === 'complete')
-   {
-      setChecked(true)
-   }
-   else {
-      setChecked(false)
-   }
-   },[state.status])
 
    const dispatch = useDispatch()
 
