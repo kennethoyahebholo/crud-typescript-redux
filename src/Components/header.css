@@ -1,0 +1,36 @@
+.header__con{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ background-color: rgba(137, 43, 226, 0.436);
+ box-shadow: 0 .8rem 1.5em .05em rgba(0, 0, 0, 0.281);
+ padding: 1rem;
+ flex-wrap: wrap;
+}
+
+.Sbtn {
+ outline: none;
+ border: none;
+ display: inline-flex;
+ background-color: rgba(3, 110, 172, 0.849);
+ color: #fff;
+ padding: .5rem .9rem;
+ border-radius: 6px;
+ cursor: pointer;
+ border: 2px solid rgba(2, 109, 171, 0.849);
+ transition: all .5s;
+ font-weight: 600;
+ transition: background-color .8s;
+}
+
+.Sbtn:hover{
+ background-color: rgba(2, 70, 110, 0.849);
+}
+
+.select__input{
+ background-color: rgba(235, 235, 235, 0.6);
+ max-width: 8rem;
+ padding: .5rem;
+ outline: none;
+ border: none;
+}

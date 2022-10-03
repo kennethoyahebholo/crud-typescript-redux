@@ -1,0 +1,105 @@
+.todoList__container{
+ background-color: rgba(199, 199, 199, 0.521);
+ box-shadow: 0 0 1.5em .1em rgba(232, 232, 232, 0.374);
+}
+
+.btn__con{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 2rem;
+}
+
+.btn{
+ outline: none;
+ border: none;
+ display: inline-flex;
+ background-color: rgb(116, 116, 116);
+ color: #fff;
+ padding: .9rem;
+ border-radius: 12px;
+ cursor: pointer;
+ border: 2px solid rgb(90, 90, 90);
+ transition: all .5s;
+ font-weight: 600;
+}
+
+.btn:hover{
+ background-color: rgb(100, 100, 100);
+ border: 2px solid rgba(3, 110, 172, 0.849);
+ color: #fff;
+}
+
+.btn_B{
+ outline: none;
+ border: none;
+ display: inline-flex;
+ background-color: rgba(3, 110, 172, 0.849);
+ color: #fff;
+ padding: .4rem;
+ border-radius: 8px;
+ cursor: pointer;
+ border: 2px solid rgb(90, 90, 90);
+ transition: all .5s;
+ font-weight: 600;
+}
+
+.btn_B:is(:hover, :focus){
+ background-color: rgba(1, 79, 124, 0.849);
+ border: 2px solid rgba(4, 121, 189, 0.849);
+ color: #fff;
+}
+
+.page__title{
+ text-align: center;
+ padding: 1rem;
+ font-size: 4rem;
+}
+
+
+.todoList__wrapper{
+ display: grid;
+ gap: 2rem;
+ padding: 0 1rem;
+}
+
+.noTodo_container {
+ background-color: rgba(125, 225, 178, 0.6);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2rem;
+}
+
+.noTodo_container>h4 {
+ text-transform: capitalize;
+ font-size: 20px;
+}
+
+@media (min-width: 50em) {
+ .todoList__wrapper{
+ padding: 0 4rem;
+} 
+}
+
+.todoList__wrapper>h4{
+ text-align: center;
+}
+
+.link{
+ text-decoration: none;
+}
+
+
+@media (min-width:60em) {
+ .todoList__wrapper{
+  grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media (min-width:85em) {
+ .todoList__wrapper{
+  grid-template-columns: repeat(3, 1fr);
+ }
+}

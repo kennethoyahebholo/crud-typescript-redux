@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app__body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.app__body::before{
+  content: "";
+  background-image: url("./assets/images/ashbg.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+  z-index: -1;
+  opacity: .2;
+}

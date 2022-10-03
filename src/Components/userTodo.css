@@ -1,0 +1,108 @@
+.main__container {
+  background-color: rgb(227, 227, 227);
+  padding: 1em;
+  display: grid;
+}
+.userTodo__container_complete{
+ display: grid;
+ gap: 1rem;
+ background-color: rgba(224, 255, 216, 0.95);
+ padding: 1rem;
+ color: rgb(13, 29, 76);
+ border-radius: 12px;
+ box-shadow: 0 0 1.5em .1em rgba(0, 0, 0, 0.135);
+ transition: transform 450ms;
+ position: relative;
+}
+.userTodo__container_complete:hover {
+ transform: scale(1.04);
+}
+
+.userTodo__container_incomplete{
+ display: grid;
+ background-color: rgba(255, 212, 212, 0.95);
+ padding: 1rem;
+ color: rgb(13, 29, 76);
+ border-radius: 12px;
+ box-shadow: 0 0 1.5em .1em rgba(0, 0, 0, 0.135);
+ transition: transform 450ms;
+ position: relative;
+}
+
+
+.userTodo__container_incomplete:hover {
+ transform: scale(1.04);
+}
+
+.userTodo__leftCon{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.8rem;
+}
+
+.todoTitle_con>h4{
+ word-break: break-all;
+ font-size: 1.2rem;
+}
+
+.todoText_con{
+  font-size: 1rem;
+  background-color: rgba(3, 110, 172, 0.849);
+  padding: .5rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.todoText_con>p{
+ word-break: break-all;
+}
+
+.underline_text{
+  text-decoration: line-through;
+}
+
+.list_btn{
+  display: inline-flex;
+  outline: none;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  gap: .6rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid darkgray;
+  cursor: pointer;
+  transition: background-color .6s;
+}
+
+.list_btn:is(:hover, :focus){
+  background-color: rgb(204, 204, 204);
+}
+
+
+.list_btn>img{
+  object-fit: contain;
+  max-width: 1rem;
+}
+
+.list_btn_con{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+  border-radius: 12px;
+  background-color: rgba(230, 184, 184, 0.605);
+  padding: .3rem;
+}
+
+.list_btn_wrapper{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkcyan;
+}
+
